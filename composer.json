@@ -3,5 +3,11 @@
         "illuminate/database": "^5.4",
         "jenssegers/blade": "^1.1",
         "dompdf/dompdf": "^0.8.0"
+    },
+    "scripts": {
+    	"post-install-cmd": [
+    		"php -c 'mkdir vistas/cache'",
+    		"php -c 'mkdir vistas\\cache'",
+    	]
     }
 }

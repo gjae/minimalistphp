@@ -79,7 +79,6 @@ else{
 
 		$cont = $global['default_controller'].$global['class_sufix'];
 		$class = new $cont;
-
 		call($class, getMethod());
 	}
 	else
