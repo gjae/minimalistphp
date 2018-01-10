@@ -6,8 +6,8 @@
     },
     "scripts": {
     	"post-install-cmd": [
-    		"php -c 'mkdir vistas/cache'",
-    		"php -c 'mkdir vistas\\cache'",
+    		"php -r \"exec('mkdir vista/cache');\"",
+    		"php -r \"exec('mkdir vista\\cache');\""
     	]
     }
 }
