@@ -1,0 +1,7 @@
+{
+    "require": {
+        "illuminate/database": "^5.4",
+        "jenssegers/blade": "^1.1",
+        "dompdf/dompdf": "^0.8.0"
+    }
+}
