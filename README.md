@@ -6,14 +6,14 @@ A mini framework for aspiring novices wanting to learn to order and standardize 
 ## Version en español
 
 Primeramente debera clonar el repositorio con git tipeando en la consola lo siguiente:
-```console git clone https://github.com/gjae/minimalistphp.git <nombre del proyecto> ```
+```$ git clone https://github.com/gjae/minimalistphp.git <nombre del proyecto> ```
 dentro de la carpeta publica de su instalación de apache (/var/www/html/)
 Seguidamente ingrese en la carpeta del proyecto y ejecute el comando composer install para instalar la carpeta vendor/ y las dependencias  pre cargadas
 Una vez realizado lo anterior, entre en su navegador preferido y dirijase a la url http://localhost/minimalistphp (on en su defecto a la ruta seleccionada) para visualizar la aplicación ya instalada
 
 ## English version
 First you must clone the repository with git by typing in the console the following:
-```git git clone https://github.com/gjae/minimalistphp.git <name of the project>```
+```$ git clone https://github.com/gjae/minimalistphp.git <name of the project>```
 within the public folder of your apache installation (/ var / www / html /)
 Next, enter the project folder and run the composer install command to install the vendor / folder and the pre-loaded dependencies
 Once the above is done, enter your preferred browser and go to the url http: // localhost / minimalistphp (on failing to the selected route) to view the application already installed
@@ -54,7 +54,8 @@ Cada uno de los metodos de cada controlador, se le inyecta por defecto un parame
     view => /* MOTOR DE PLANTILLAS BLADE: SU USO SE PUEDE VER DENTRO DEL CONTROLADOR IndexController.php */,
     conf => /* CONFIGURACIÓN GLOBAL DE MINIMALISTPHP */,
     request => /* VARIABLES ENVIADAS POR METODO GET COMO POR EJEMPLO EL CONTROLADOR Y EL METODO DEL CONTROLADOR */, 
-]```.
+]
+```.
 Esto puede ser extendido, usted puede crear mas servicios en cualquier carpeta del proyecto (por ejempĺo en la carpeta de configuración) y manipularlo dentro del archivo index.php en la raíz del proyecto.
 
 ## English version
@@ -67,7 +68,8 @@ Each of the methods of each controller, is injected by default a parameter with 
     view => / * BLADE TEMPLATE MOTOR: YOUR USE CAN BE SEEN INSIDE THE CONTROLLER IndexController.php * /,
     conf => / * GLOBAL CONFIGURATION OF MINIMALISTPHP * /,
     request => / * VARIABLES SENT BY THE GET METHOD AS FOR EXAMPLE THE CONTROLLER AND THE CONTROLLER METHOD * /,
-]```
+]
+```
 This can be extended, you can create more services in any project folder (for example in the configuration folder) and manipulate it within the index.php file in the root of the project.
 
 ## Modelos / Models
@@ -114,7 +116,8 @@ class IndexController
 		return "Hola mundo";
 	}
 }
-?>```
+?>
+```
 
 ahora, en su navegador, ingrese en la url: http://localhost/minimalistphp/index.php?cont=index&meth=holaMundo para visualizar el resultado.
 Si las variables cont y meth no se encuentran en la URL, MinimalistPHP utilizara el controlador y el metodo por defectos, definidos dentro del archivo config/globalConfig.php (variables: default_controller y default_method respectivamente)
@@ -139,7 +142,8 @@ class IndexController
 		return "Hello world";
 	}
 }
-?>```
+?>
+```
 
 Now, in your browser, enter in the url: http://localhost/minimalistphp/index.php?cont=index&meth=helloWorld to visualize the result.
 If the variables cont and meth are not found in the URL, MinimalistPHP will use the controller and the default method, defined within the config / globalConfig.php file (variables: default_controller and default_method respectively)
